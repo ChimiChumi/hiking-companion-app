@@ -1,0 +1,113 @@
+{
+  "en": {
+    "translation": {
+      "search": {
+        "placeholder": "Search location...",
+        "noResults": "No results found"
+      },
+      "label": {
+        "backButton": "Back",
+        "startButton": "Start",
+        "startNavigation": "Start navigation",
+        "tripDuration": "Trip duration: ~{{hours}}h {{minutes}}m",
+        "tripDurationNoHours": "Trip duration: ~{{minutes}}m",
+        "hours": "h",
+        "minutes": "m",
+        "seconds": "s",
+        "altitude": "Altitude",
+        "loading": "Loading might take longer, please wait..."
+      },
+      "navigation": {
+        "elapsedTime": "Time elapsed:",
+        "distanceLeft": "Distance left:",
+        "lengthTraveled": "Length traveled:",
+        "currentAltitude": "Current altitude:",
+        "offRoute": "You are off route! \n \n Return to the path to continue navigation!"
+      },
+      "QR": {
+        "header": "Scan route QR Code",
+        "loading": "Loading route...",
+        "noResult": "No valid route found!"
+      },
+      "permission": {
+        "settings": "Open permissions",
+        "noCamera": "QR scanner requires camera permission!",
+        "noLocation": "Please allow precise location permission!"
+      }
+    }
+  },
+  "tr": {
+    "translation": {
+      "search": {
+        "placeholder": "Konum ara...",
+        "noResults": "Sonuç bulunamadı"
+      },
+      "label": {
+        "backButton": "Geri",
+        "startButton": "Başla",
+        "startNavigation": "Navigasyonu başlat",
+        "tripDuration": "Seyahat süresi: ~{{hours}}s {{minutes}}d",
+        "tripDurationNoHours": "Seyahat süresi: ~{{minutes}}d",
+        "hours": "s",
+        "minutes": "d",
+        "seconds": "sn",
+        "altitude": "Yükseklik",
+        "loading": "Yükleme uzun sürebilir, lütfen bekleyin..."
+      },
+      "navigation": {
+        "elapsedTime": "Geçen süre:",
+        "distanceLeft": "Kalan mesafe:",
+        "lengthTraveled": "Kat edilen mesafe:",
+        "currentAltitude": "Mevcut yükseklik:",
+        "offRoute": "Rota dışına çıktınız! \n \n Navigasyona devam etmek için rotaya dönün!"
+      },
+      "QR": {
+        "header": "Rota QR Kodunu Tara",
+        "loading": "Rota yükleniyor...",
+        "noResult": "Geçerli bir rota bulunamadı!"
+      },
+      "permission": {
+        "settings": "İzinleri aç",
+        "noCamera": "QR kod tarayıcısı için kamera izni gereklidir!",
+        "noLocation": "Lütfen konum iznini açın!"
+      }
+    }
+  },
+  "hu": {
+    "translation": {
+      "search": {
+        "placeholder": "Útvonal keresése...",
+        "noResults": "Nincs találat"
+      },
+      "label": {
+        "backButton": "Vissza",
+        "startButton": "Start",
+        "startNavigation": "Túra kezdőpontja",
+        "tripDuration": "Út időtartama: ~{{hours}}ó {{minutes}}p",
+        "tripDurationNoHours": "Út időtartama: ~{{minutes}}p",
+        "hours": "ó",
+        "minutes": "p",
+        "seconds": "mp",
+        "altitude": "Magasság",
+        "loading": "Betöltés hosszabb ideig is eltarthat, kérjük várjon..."
+      },
+      "navigation": {
+        "elapsedTime": "Eltelt időtartam:",
+        "distanceLeft": "Maradék távolság:",
+        "lengthTraveled": "Megtett távolság:",
+        "currentAltitude": "Emelkedés:",
+        "offRoute": "Elhagytad az útvonalat! \n \n A navigáció folytatásához, térj vissza az út közelébe!"
+      },
+      "QR": {
+        "header": "QR kód beolvasása",
+        "loading": "Útvonal betöltése...",
+        "noResult": "Nem található érvényes útvonal!"
+      },
+      "permission": {
+        "settings": "Engedélyek megnyitása",
+        "noCamera": "A QR kód beolvasáshoz engedély szükséges!",
+        "noLocation": "Kérjük engedélyezze a pontos helymeghatározást!"
+      }
+    }
+  }
+}
