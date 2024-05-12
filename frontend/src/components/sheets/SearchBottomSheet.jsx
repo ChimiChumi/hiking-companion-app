@@ -24,17 +24,17 @@ import {
   cacheAllFeatures,
 } from '../../../context/reducers/routeReducer';
 import {closeSheet, getOpenedSheet} from '../../../context/reducers/sheetReducer';
+import {getIsConnected} from '../../../context/reducers/utilReducer';
 
+import {handleRouteSelection} from '../../utils/handlers';
 import {formatDistance} from '../../utils/formatters';
-import {shouldKeepSheetOpen} from '../../utils/helpers';
+import {shouldKeepSheetOpen, checkNetworkStatus} from '../../utils/helpers';
 import {ASSETS, SCREEN_WIDTH, SHEETS} from '../../consts';
 
 import ActionButton from '../dumb/ActionButton';
 
 import searchStyles from '../../styles/searchStyles';
 import sheetStyles from '../../styles/sheetStyles';
-import {getIsConnected} from '../../../context/reducers/utilReducer';
-import {handleRouteSelection} from '../../utils/handlers';
 
 const SearchBottomSheet = () => {
   const {t} = useTranslation();
@@ -58,7 +58,8 @@ const SearchBottomSheet = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isProxy, setIsProxy] = useState(false);
 
-  const checkNewRoutes = async () => {
+  const checkNewRoutes = () => {
+    checkNetworkStatus(dispatch);
     if (network) {
       setLoading(true);
       dispatch(fetchAllRoutes());

@@ -1,4 +1,6 @@
 import * as Location from 'expo-location';
+import NetInfo from '@react-native-community/netinfo';
+import { setIsConnected } from '../../context/reducers/utilReducer';
 
 import { ASSETS, SHEETS } from '../consts';
 
@@ -46,6 +48,16 @@ export async function checkLocation(callback) {
   } else {
     return true;
   }
+}
+
+export function checkNetworkStatus(dispatch) {
+  const handleConnectivityChange = (state) => {
+    dispatch(setIsConnected(state.isConnected));
+  };
+
+  const unsubscribe = NetInfo.addEventListener(handleConnectivityChange);
+
+  return unsubscribe;
 }
 
 

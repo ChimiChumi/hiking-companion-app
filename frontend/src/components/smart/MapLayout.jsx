@@ -169,7 +169,6 @@ const MapLayout = forwardRef(
         const commonSettings = {
           centerCoordinate: userLocation,
           animationMode: 'flyTo',
-          followUserLocation: isNavMode,
         };
 
         const modeSpecificSettings = isNavMode
@@ -178,7 +177,6 @@ const MapLayout = forwardRef(
               pitch: 50,
               padding: {paddingTop: 300},
               animationDuration: 500,
-              followZoomLevel: 5,
             }
           : {
               zoomLevel: 15,
@@ -290,7 +288,7 @@ const MapLayout = forwardRef(
           logoEnabled={!isSearchVisible || statuses.routeFeatures === 'fulfilled'}
           attributionEnabled={!isSearchVisible || statuses.routeFeatures === 'fulfilled'}
           scaleBarEnabled={!isSearchVisible}
-          compassEnabled={isCompassVisible}
+          compassEnabled={isCompassVisible} //workaround for compass: write it from scratch, link it to the map's orientation (probably camera). onpress, set camera to north and fade
           compassPosition={!isSearchVisible ? {top: 70, left: 10} : {top: -500, left: -500}}
           logoPosition={{bottom: 5, left: 5}}
           attributionPosition={{bottom: 5, left: 5}}

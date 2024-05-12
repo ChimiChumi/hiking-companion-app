@@ -13,7 +13,8 @@ import useInitialURL from '../src/hooks/useInitialUrl';
 import useScreenOrientation from '../src/hooks/useScreenOrientation';
 import {useRequestLocationPermission} from '../src/hooks/useRequestLocationPermission';
 import {useInitializeLocale} from '../src/hooks/useInitializeLocale';
-import {useNetworkStatus} from '../src/hooks/useNetworkStatus';
+
+import {checkNetworkStatus} from '../src/utils/helpers';
 
 import {checkAndDownloadNewRoutes} from '../src/services/FirebaseService';
 import {getSymbolsToStorage} from '../src/services/FileSystemService';
@@ -34,7 +35,6 @@ const App = () => {
   useScreenOrientation();
   useInitializeLocale();
   useRequestLocationPermission();
-  useNetworkStatus();
 
   const progressListener = (pack, status) => {
     console.log(`Progress: ${Math.floor(status.percentage)}%`);
@@ -53,6 +53,7 @@ const App = () => {
       console.error(error);
     };
 
+    checkNetworkStatus(dispatch);
     auth().signInAnonymously().then(success).catch(error);
     checkAndDownloadNewRoutes(progressListener);
     dispatch(cacheAllFeatures());

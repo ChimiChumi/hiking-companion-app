@@ -8,7 +8,7 @@
       "label": {
         "backButton": "Back",
         "startButton": "Start",
-        "startNavigation": "Start navigation",
+        "startNavigation": "Set as destination",
         "tripDuration": "Trip duration: ~{{hours}}h {{minutes}}m",
         "tripDurationNoHours": "Trip duration: ~{{minutes}}m",
         "hours": "h",
@@ -45,7 +45,7 @@
       "label": {
         "backButton": "Geri",
         "startButton": "Başla",
-        "startNavigation": "Navigasyonu başlat",
+        "startNavigation": "Rota hedefi",
         "tripDuration": "Seyahat süresi: ~{{hours}}s {{minutes}}d",
         "tripDurationNoHours": "Seyahat süresi: ~{{minutes}}d",
         "hours": "s",
@@ -82,7 +82,7 @@
       "label": {
         "backButton": "Vissza",
         "startButton": "Start",
-        "startNavigation": "Túra kezdőpontja",
+        "startNavigation": "Túra célpontja",
         "tripDuration": "Út időtartama: ~{{hours}}ó {{minutes}}p",
         "tripDurationNoHours": "Út időtartama: ~{{minutes}}p",
         "hours": "ó",
